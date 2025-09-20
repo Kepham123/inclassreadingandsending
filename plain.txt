@@ -3,3 +3,10 @@ Author: Sahar Al Seesi
 
 This is a text File
 This file will be used to illustrate how to read files using Node.js fs module and how to serve it up to the browser
+Q1: You dont need sudo for lab.js because it is not a file that listens to a server port and thus does not require sudo.
+Q2:The lab.js script uses Node.js's fs module to read the contents of the plain.txt file and display them in the terminal.
+Q3:Because fs.readFile is an async function and begins reading the file in the background. The program just continutes to the next line printing that.
+Q4:Without it, it will return a sequence of numbers which is from trhe raw data. So we use the .toString('utf8') to decode the bugger data into readable string following the UTF-8 standard.
+Q5:Because the HTTP res.write() method can handle the buffer data based on the content type header defined
+Q6:I mean it has to be dynamic and be able to check the file extension in order to set that content type based on that.
+Q7:By implementing routing using conditional statements to check the URL's path.
